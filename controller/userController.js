@@ -13,6 +13,7 @@ const signupUser = catchAsync(async(req ,res , next) =>{
     const newUser  = await User.create({
         name : req.body.name ,
         gender: req.body.gender , 
+        dob: req.body.dob , 
         country: req.body.counrty ,
         email : req.body.email , 
         password : req.body.password, 
