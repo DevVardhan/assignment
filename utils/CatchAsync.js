@@ -4,5 +4,4 @@ const catchAsync = fn =>{
         fn(req , res , next).catch(next);
     };
 };
-
 export default catchAsync ; 
